@@ -1,8 +1,8 @@
-<div>
-    <button [class.active] ="select" (click)="onSelectedUser()">
-        <img [src] = "imagePath"
-             [alt] = "user.name"/>
+<app-card>
+    <button (click)="onSelectedUser()" [class.active]="select">
+        <img [alt]="user.name"
+             [src]="imagePath"/>
 
         <span>{{ user.name }}</span>
     </button>
-</div>
+</app-card>
